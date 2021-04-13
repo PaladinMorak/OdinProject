@@ -1,0 +1,15 @@
+<style>
+  :root {
+    --red-color: red;
+  }
+
+  /* Browser compatibility can be improved with Fallbacks. This is done through setting the desired
+     desired value before using for example a variable.*/
+  .red-box {
+    background: red; /*<-- The fallback*/
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>

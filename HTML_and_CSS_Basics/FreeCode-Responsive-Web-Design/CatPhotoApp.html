@@ -1,30 +1,74 @@
+<!--Import a Google Font uysing the link-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> 
 <style>
+    /*CSS Class declared through . followed by the class name*/
     .red-text {
-        color: red;
+        color: red; /*Color can be defined through the 'color' attribute*/
+    }
+
+    
+    p {
+        font-size: 16px; /*Font size can be set through the 'font-size' attribute*/
+        font-family: monospace 
+    }
+
+    h2 {
+        font-family: Lobster, monospace; /*The font family can be set through the 'font-family'
+                                          attribute and following syntax font-family: FAMILY_NAME 
+                                          GENERIC_NAME; FAMILY_NAME sets the font and the 
+                                          GENERIC_NAME is a fallback font if the first is not available*/
+    }
+
+    .smaller-image{
+        width: 100px; /*Width set the width of an element*/
+    }
+
+    .thick-green-border{ /* Creates Border around an HTML element. */
+        border-color: green; /* Sets Border Color */
+        border-width: 10px; /* Sets Border width */
+        border-style: solid; /* Sets Border Style */
+        border-radius: 50%; /* Sets Border Radius for rounded corners: 50% = perfect Cirular Border */
+    }
+
+    .silver-background{
+        background-color: silver; /* Sets the Background Color of an Element */
+
+    }
+
+    #cat-photo-form{ /* Sets the Style for an Element with the ID #ID. Overrules other styles
+                        given to the element. */
+        background-color: green;
+    }
+
+    /* We can also use an attribute selector to style element with a certain attribute */
+    [type='checkbox']{
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
 </style>
 <h2 class="red-text">CatPhotoApp</h2> 
 <main>
-  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+    <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
-  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-  <div>
-    <p>Things cats love:</p>
-    <ul>
-      <li>cat nip</li>
-      <li>laser pointers</li>
-      <li>lasagna</li>
-    </ul>
-    <p>Top 3 things cats hate:</p>
-    <ol>
-      <li>flea treatment</li>
-      <li>thunder</li>
-      <li>other cats</li>
-    </ol>
-  </div>
+    <div class="silver-background">
+        <p>Things cats love:</p>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+    </div>
 
-  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <!-- ID's can be assigned to elements, they help with styling and used in Java Script. ID's should be UNIQUE -->
+    <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo"> 
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <label><input type="checkbox" name="personality" checked> Loving</label>
@@ -32,5 +76,5 @@
     <label><input type="checkbox" name="personality"> Energetic</label><br>
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
-  </form>
+    </form>
 </main>
