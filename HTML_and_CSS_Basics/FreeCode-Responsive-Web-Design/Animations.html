@@ -1,0 +1,52 @@
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #rect {
+    animation-name: rainbow; /* animation-name Sets the name of the animation that gets used by the
+                                keyframes rule to link to the animation */
+    animation-duration: 4s; /* animation-duration sets the duration of the animation. */
+
+    /* animation-fill-mode sets what happens at the end of an animation. */
+
+    /* animation-iteration-count sets how often an animation is repeated, infinite for no limit */
+
+    /* animation-timing-function: sets the animation acceleration */
+  }
+
+  /* Keyframe rules control what happens during an animation. Links to the name provided
+     @keyframes ANIMATION-NAME.
+
+    The frames for an animation are selected using percentages ranging from 0 to 100%.
+
+    They can be applied to states of elements.
+
+    Elements with relative or fixed positions can be animate motion through the offset properties.
+   */
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+      left: 25px;
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left: -25px;
+    }
+  }
+
+
+</style>
+<div id="rect"></div>
