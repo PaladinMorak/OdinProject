@@ -1,0 +1,30 @@
+ % !TeX program = lualatex
+\documentclass{report}
+\setlength\parindent{0pt}
+
+\usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\title{A Review of The Odin Project Foundations Course}
+\author{PaladinMorak}
+
+%Beginn des Dokuments
+\begin{document}
+\maketitle
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{roman}
+\tableofcontents
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%einzelne Kapitel
+\include{HTML_AND_CSS_BASICS}
+
+\end{document}

@@ -1,0 +1,27 @@
+\chapter{HTML and CSS Basics}
+This chapter mainly covers the \href{https://www.freecodecamp.org}{freeCodeCamp} tutorials around
+Responsive Web Design.
+
+\section{Basic CSS}
+\subsection{How to Select which elements to style}
+\subsubsection*{Selectors}
+Selectors can be used to apply CSS styling to all elements of a specific type. This is done through
+writing the ELEMENT\_TYPE followed by a list of styling options encased in curly brackets.
+\begin{lstlisting}[language=HTML, caption="CSS Element type styling example",captionpos=b,frame=tb]
+ELEMENT_TYPE {
+    STYLING
+}
+\end{lstlisting}
+
+\subsubsection*{Classes}
+CSS Classes are defined through adding a dot \(.\) in front of CLASS\_NAME. They can be used for styling
+several different element types the same way. They are selected by adding the "class" attribute to
+an HTML element.
+\begin{lstlisting}[language=HTML, caption="CSS Classes Example",captionpos=b,frame=tb]
+.CLASS_NAME{
+    STYLING
+} 
+
+<ELEMENT class="CLASS_NAME"></ELEMENT>
+\end{lstlisting}
+
